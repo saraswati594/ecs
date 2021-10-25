@@ -1,0 +1,391 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 28,
+        "name": "User should create a event",
+        "description": "",
+        "id": "as-a-ecs-user,--create-a-event;user-should-create-a-event;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8053478300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "open ecs application",
+            "match": {
+              "location": "CreateEventStep.loginToDaggr()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 182756000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enter valid username \"shetty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shetty",
+                  "offset": 27
+                }
+              ],
+              "location": "CreateEventStep.enterUserName(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 195422600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter valid password \"dnis@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dnis@123",
+                  "offset": 27
+                }
+              ],
+              "location": "CreateEventStep.enter_Pass(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7594454800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on signin button",
+            "match": {
+              "location": "CreateEventStep.submitLogin()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13504200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user succesfully reached to homepage",
+            "match": {
+              "location": "CreateEventStep.succuessfullHomepage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8041800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user able to see homepage",
+            "match": {
+              "location": "CreateEventStep.seeHomepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3284113400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click on add event",
+            "match": {
+              "location": "CreateEventStep.clickAddEvent()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7558700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user can see new eventpage",
+            "match": {
+              "location": "CreateEventStep.see_new_event_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 239064900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user choose event type as",
+            "match": {
+              "location": "CreateEventStep.chooseeventtype()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 758504100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enter company name as \"kis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kis",
+                  "offset": 28
+                }
+              ],
+              "location": "CreateEventStep.entercompanyname(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 717599800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user enter date and time as \"2021-10-25 10:30\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021-10-25 10:30",
+                  "offset": 29
+                }
+              ],
+              "location": "CreateEventStep.dateandtime(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 195406700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user choose final quarter as \"Q2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Q2",
+                  "offset": 30
+                }
+              ],
+              "location": "CreateEventStep.choofinalquarter(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 183771400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user choose final year as \"2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021",
+                  "offset": 27
+                }
+              ],
+              "location": "CreateEventStep.choosefinalyear(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117622800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user choose source url as \"www.abc.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "www.abc.com",
+                  "offset": 27
+                }
+              ],
+              "location": "CreateEventStep.choosesourceurl(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 77455800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter live phonecall as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 30
+                }
+              ],
+              "location": "CreateEventStep.enterlivephonecall(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 79174300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user enter passcode as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 24
+                }
+              ],
+              "location": "CreateEventStep.enterpasscode(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 78984500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user enter replay livecall as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 31
+                }
+              ],
+              "location": "CreateEventStep.enterreplaylivecall(String)"
+            },
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36203100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user enter replay passcode as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 31
+                }
+              ],
+              "location": "CreateEventStep.enterreplaypasscode(String)"
+            },
+            "matchedColumns": [
+              10
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 74840600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enter live webcasturl as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 31
+                }
+              ],
+              "location": "CreateEventStep.enterlivewebcasturl(String)"
+            },
+            "matchedColumns": [
+              11
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 85008500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enter replay webcast url as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 34
+                }
+              ],
+              "location": "CreateEventStep.enterreplaywebcasturl(String)"
+            },
+            "matchedColumns": [
+              12
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43599146900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user click on next button",
+            "match": {
+              "location": "CreateEventStep.nextbutton()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "As a ecs user,  Create a event",
+    "description": "",
+    "id": "as-a-ecs-user,--create-a-event",
+    "keyword": "Feature",
+    "uri": "C:/Users/hp/eclipse-workspace/Digital-Nirvana/DN_Process/src/main/java/Features/CreateEvent.feature"
+  }
+]
