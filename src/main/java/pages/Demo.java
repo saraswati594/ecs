@@ -13,19 +13,15 @@ public class Demo {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\hp\\eclipse-workspace\\Digital-Nirvana\\DN_Process\\driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://sqa.ecs.digital-nirvana.com/add_event_data.php");
-		 List<WebElement> autoSuggest = driver.findElements(By.className("valid"));
-	        Thread.sleep(3000);
-	      
-	        // print the auto suggest
-	        for (WebElement a : autoSuggest)
-	        {
-	        	System.out.println("Values are = " + a.getText());
-	        	if (a.getText().equalsIgnoreCase("app"));
-	        	a.click();
-	        	Thread.sleep(3000);
-	        	break;
-	        }
+		driver.get("https://sqa.ecs.digital-nirvana.com");
+		driver.findElement(By.xpath("/html/body/div[1]/div/table/tbody/tr[2]/td[2]/input")).sendKeys("shetty");
+		driver.findElement(By.xpath("/html/body/div[1]/div/table/tbody/tr[5]/td[2]/input")).sendKeys("dnis@123");
+		driver.findElement(By.xpath("/html/body/div[1]/div/table/tbody/tr[7]/td[2]/input")).click();
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/a[5]")).click();
+		boolean gg=driver.findElement(By.xpath("/html/body/table/tbody/tr[2]/td[2]/a")).getText().contains("APPLE");
+		//driver.findElement(By.xpath("")).
+		
+		System.out.println(gg);
 
 	}
 

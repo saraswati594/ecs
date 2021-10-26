@@ -132,5 +132,22 @@ public class CreateEventStep extends Base {
 	public void nextbutton() {
 		createEvent.enterSend();
 	}
-
+	@Then("user need to wait for event create")
+	public void waitforevents() throws InterruptedException {
+		createEvent.waitfortime();
+	}
+	
+	@Then("user click on procesed data")
+	public void user_clik_proceeddata() {
+		createEvent.clickproceed();
+	}
+	
+	@Then("user check the event is created or not by \"([^\"]*)\"$")
+	public void check_event_created(String check) {
+		createEvent.checkcompany(check);
+	}
+	@Then("user able to logout")
+	public void logout() {
+		createEvent.logout();
+	}
 }

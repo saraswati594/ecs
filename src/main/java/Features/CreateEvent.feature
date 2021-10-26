@@ -22,7 +22,10 @@ Then user enter replay passcode as "<livepass>"
 Then User enter live webcasturl as "<webcasturl>"
 Then user enter replay webcast url as "<livewebcasturl>"
 When user click on next button
-
+Then user need to wait for event create
+Then user click on procesed data
+Then user check the event is created or not by "<checkcompanyname>"
+Then user able to logout
 Examples:
-| username| password | companyname | datewithtime     | quater | year | url         | phonecall | passcode | livecall | livepass | webcasturl | livewebcasturl |
-| shetty  | dnis@123 |   kis       | 2021-10-25 10:30 |    Q2  | 2021 | www.abc.com |           |          |          |          |            |                |
+| username| password | companyname   | datewithtime     | quater | year | url         | phonecall | passcode | livecall | livepass | webcasturl | livewebcasturl | checkcompanyname |
+| shetty  | dnis@123 |   Apple       | 2021-10-27 06:55 |    Q2  | 2021 | www.abc.com |           |          |          |          |            |                |    APPLE         |

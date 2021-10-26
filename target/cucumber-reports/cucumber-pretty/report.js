@@ -119,8 +119,28 @@ formatter.step({
   "name": "user click on next button",
   "keyword": "When "
 });
-formatter.examples({
+formatter.step({
+  "line": 25,
+  "name": "user need to wait for event create",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 26,
+  "name": "user click on procesed data",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "user check the event is created or not by \"\u003ccheckcompanyname\u003e\"",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "user able to logout",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 29,
   "name": "",
   "description": "",
   "id": "as-a-ecs-user,--create-a-event;user-should-create-a-event;",
@@ -139,17 +159,18 @@ formatter.examples({
         "livecall",
         "livepass",
         "webcasturl",
-        "livewebcasturl"
+        "livewebcasturl",
+        "checkcompanyname"
       ],
-      "line": 27,
+      "line": 30,
       "id": "as-a-ecs-user,--create-a-event;user-should-create-a-event;;1"
     },
     {
       "cells": [
         "shetty",
         "dnis@123",
-        "kis",
-        "2021-10-25 10:30",
+        "Apple",
+        "2021-10-27 06:55",
         "Q2",
         "2021",
         "www.abc.com",
@@ -158,16 +179,17 @@ formatter.examples({
         "",
         "",
         "",
-        ""
+        "",
+        "APPLE"
       ],
-      "line": 28,
+      "line": 31,
       "id": "as-a-ecs-user,--create-a-event;user-should-create-a-event;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 28,
+  "line": 31,
   "name": "User should create a event",
   "description": "",
   "id": "as-a-ecs-user,--create-a-event;user-should-create-a-event;;2",
@@ -227,7 +249,7 @@ formatter.step({
 });
 formatter.step({
   "line": 13,
-  "name": "user enter company name as \"kis\"",
+  "name": "user enter company name as \"Apple\"",
   "matchedColumns": [
     2
   ],
@@ -235,7 +257,7 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "user enter date and time as \"2021-10-25 10:30\"",
+  "name": "user enter date and time as \"2021-10-27 06:55\"",
   "matchedColumns": [
     3
   ],
@@ -318,11 +340,34 @@ formatter.step({
   "name": "user click on next button",
   "keyword": "When "
 });
+formatter.step({
+  "line": 25,
+  "name": "user need to wait for event create",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "user click on procesed data",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "user check the event is created or not by \"APPLE\"",
+  "matchedColumns": [
+    13
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "user able to logout",
+  "keyword": "Then "
+});
 formatter.match({
   "location": "CreateEventStep.loginToDaggr()"
 });
 formatter.result({
-  "duration": 8053478300,
+  "duration": 12618338100,
   "status": "passed"
 });
 formatter.match({
@@ -335,7 +380,7 @@ formatter.match({
   "location": "CreateEventStep.enterUserName(String)"
 });
 formatter.result({
-  "duration": 182756000,
+  "duration": 178665800,
   "status": "passed"
 });
 formatter.match({
@@ -348,75 +393,75 @@ formatter.match({
   "location": "CreateEventStep.enter_Pass(String)"
 });
 formatter.result({
-  "duration": 195422600,
+  "duration": 238882200,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateEventStep.submitLogin()"
 });
 formatter.result({
-  "duration": 7594454800,
+  "duration": 5257701900,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateEventStep.succuessfullHomepage()"
 });
 formatter.result({
-  "duration": 13504200,
+  "duration": 9794400,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateEventStep.seeHomepage()"
 });
 formatter.result({
-  "duration": 8041800,
+  "duration": 6952000,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateEventStep.clickAddEvent()"
 });
 formatter.result({
-  "duration": 3284113400,
+  "duration": 2861045800,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateEventStep.see_new_event_page()"
 });
 formatter.result({
-  "duration": 7558700,
+  "duration": 6062200,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateEventStep.chooseeventtype()"
 });
 formatter.result({
-  "duration": 239064900,
+  "duration": 345849200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "kis",
+      "val": "Apple",
       "offset": 28
     }
   ],
   "location": "CreateEventStep.entercompanyname(String)"
 });
 formatter.result({
-  "duration": 758504100,
+  "duration": 710341600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "2021-10-25 10:30",
+      "val": "2021-10-27 06:55",
       "offset": 29
     }
   ],
   "location": "CreateEventStep.dateandtime(String)"
 });
 formatter.result({
-  "duration": 717599800,
+  "duration": 648188300,
   "status": "passed"
 });
 formatter.match({
@@ -429,7 +474,7 @@ formatter.match({
   "location": "CreateEventStep.choofinalquarter(String)"
 });
 formatter.result({
-  "duration": 195406700,
+  "duration": 253329900,
   "status": "passed"
 });
 formatter.match({
@@ -442,7 +487,7 @@ formatter.match({
   "location": "CreateEventStep.choosefinalyear(String)"
 });
 formatter.result({
-  "duration": 183771400,
+  "duration": 239308200,
   "status": "passed"
 });
 formatter.match({
@@ -455,7 +500,7 @@ formatter.match({
   "location": "CreateEventStep.choosesourceurl(String)"
 });
 formatter.result({
-  "duration": 117622800,
+  "duration": 147599000,
   "status": "passed"
 });
 formatter.match({
@@ -468,7 +513,7 @@ formatter.match({
   "location": "CreateEventStep.enterlivephonecall(String)"
 });
 formatter.result({
-  "duration": 77455800,
+  "duration": 107634700,
   "status": "passed"
 });
 formatter.match({
@@ -481,7 +526,7 @@ formatter.match({
   "location": "CreateEventStep.enterpasscode(String)"
 });
 formatter.result({
-  "duration": 79174300,
+  "duration": 108517500,
   "status": "passed"
 });
 formatter.match({
@@ -494,7 +539,7 @@ formatter.match({
   "location": "CreateEventStep.enterreplaylivecall(String)"
 });
 formatter.result({
-  "duration": 78984500,
+  "duration": 109355400,
   "status": "passed"
 });
 formatter.match({
@@ -507,7 +552,7 @@ formatter.match({
   "location": "CreateEventStep.enterreplaypasscode(String)"
 });
 formatter.result({
-  "duration": 36203100,
+  "duration": 46304800,
   "status": "passed"
 });
 formatter.match({
@@ -520,7 +565,7 @@ formatter.match({
   "location": "CreateEventStep.enterlivewebcasturl(String)"
 });
 formatter.result({
-  "duration": 74840600,
+  "duration": 124743700,
   "status": "passed"
 });
 formatter.match({
@@ -533,14 +578,48 @@ formatter.match({
   "location": "CreateEventStep.enterreplaywebcasturl(String)"
 });
 formatter.result({
-  "duration": 85008500,
+  "duration": 116205300,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateEventStep.nextbutton()"
 });
 formatter.result({
-  "duration": 43599146900,
+  "duration": 43225263100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateEventStep.waitforevents()"
+});
+formatter.result({
+  "duration": 10005154500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateEventStep.user_clik_proceeddata()"
+});
+formatter.result({
+  "duration": 2652174000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "APPLE",
+      "offset": 43
+    }
+  ],
+  "location": "CreateEventStep.check_event_created(String)"
+});
+formatter.result({
+  "duration": 53196800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CreateEventStep.logout()"
+});
+formatter.result({
+  "duration": 1059723600,
   "status": "passed"
 });
 });

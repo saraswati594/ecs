@@ -18,6 +18,8 @@ import org.openqa.selenium.interactions.touch.DownAction;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+
 
 public class CreateEvent {
 	WebDriver driver;
@@ -110,6 +112,12 @@ public class CreateEvent {
 
 	@FindBy(xpath="//button[contains(text(),'Done')]")
 	WebElement done;
+	
+	@FindBy(xpath="/html/body/table/tbody/tr[2]/td[2]/a")
+	WebElement last;
+	
+	@FindBy(xpath="/html/body/div[1]/div/div/div/a[6]")
+	WebElement logout;
 	public void clickEvent() {
 		addevent.click();
 	}
@@ -158,6 +166,11 @@ public class CreateEvent {
 	@FindBy(xpath="/html/body/form/table/tbody/tr[5]/td/div/table/tbody/tr[1]/td")
 	WebElement ccl;
 	
+	@FindBy(xpath="/html/body/div[1]/div/div/div/a[5]")
+	WebElement proceed;
+	
+	@FindBy(xpath="/html/body/table/tbody/tr[2]/td[2]/a")
+	WebElement checkcompany;
 	public void enterCompanyName(String cn) throws InterruptedException {
 		company.sendKeys(cn);
 		Thread.sleep(200);
@@ -218,5 +231,23 @@ public class CreateEvent {
 	}
 	public void enterSend() {
 		send.click();
+	}
+	
+	public void waitfortime() throws InterruptedException {
+		Thread.sleep(10000);
+	}
+	
+	public void clickproceed() {
+		proceed.click();
+	}
+	
+	public void checkcompany(String cname) {
+		boolean bodyText = last.getText().contains(cname);
+		//Assert.assert("Text not found!", bodyText.contains(cname));
+		Assert.assertEquals(bodyText,true);
+	}
+	
+	public void logout() {
+		logout.click();
 	}
 }
